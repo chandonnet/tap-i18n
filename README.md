@@ -386,11 +386,11 @@ Assuming the client language is en.
     page.html (lng and lang options are the same in tap:i18n you can use both):
     ----------
     <template name="x">
-        {{_ "click" lang="fr"}} 
+        {{_ "click" lang="fr"}}
     </template>
 
     <template name="x">
-        {{_ "click" lng="fr"}} 
+        {{_ "click" lng="fr"}}
     </template>
 
     output:
@@ -680,11 +680,11 @@ The values below are the defaults.
     {
         // The name for the translation function that
         // will be available in package's namespace.
-        "translation_function_name": "__", 
+        "translation_function_name": "__",
 
         // the name for the package templates' translation helper
-        "helper_name": "_", 
-        
+        "helper_name": "_",
+
         // directory for the translation files (without leading slash)
         "languages_files_dir": "i18n",
 
@@ -694,7 +694,7 @@ The values below are the defaults.
         // the package. By using the name of another package you can use your package to
         // add to that package or modify its translations. You can also set the namespace to
         // "project" to add translations that will be available in the project level.
-        "namespace": null 
+        "namespace": null
     }
 
 **Step 2:** Create your languages\_files\_dir:
@@ -782,7 +782,7 @@ See "The tap-i18n helper" section above.
 
 ## Unit Testing
 
-See /unittest/test-packages/README.md .
+See /.unittest/test-packages/README.md .
 
 ## License
 
