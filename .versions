@@ -39,7 +39,7 @@ raix:eventemitter@0.1.2
 random@1.1.0
 reactive-dict@1.3.0
 reactive-var@1.0.11
-rocketchat:tap-i18n@1.9.0
+rocketchat:tap-i18n@1.9.1
 routepolicy@1.1.0
 session@1.2.0
 spacebars@1.0.7
