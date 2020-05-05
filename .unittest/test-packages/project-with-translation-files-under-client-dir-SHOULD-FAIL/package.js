@@ -29,7 +29,7 @@ Package.on_use(function (api) {
 });
 
 Package.onTest(function(api) {
-  api.versionsFrom('METEOR@0.9.1');
+  api.versionsFrom('1.8.1');
 
   api.use('underscore', both);
 
