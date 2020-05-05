@@ -24,7 +24,7 @@ Package.onUse(function(api) {
 	api.use('jquery', client);
 	api.use('templating', client);
 
-	api.use('cfs:http-methods@0.0.27', server);
+	api.use('cfs:http-methods@0.0.32', server);
 
 	// load TAPi18n
 	api.add_files('lib/globals.js', both);
@@ -52,9 +52,9 @@ Package.onUse(function(api) {
 
 Package.registerBuildPlugin({
 	name: 'tap-i18n-compiler',
-	use: ['coffeescript', 'underscore', 'mdg:validation-error@0.5.1', 'aldeed:simple-schema@1.3.0', 'check@1.0.3', 'templating'],
+	use: ['coffeescript', 'underscore', 'mdg:validation-error@0.5.1', 'aldeed:simple-schema@1.5.4', 'check', 'templating'],
 	npmDependencies: {
-		yamljs: '0.2.4',
+		yamljs: '0.3.0',
 	},
 	sources: [
 		'lib/globals.js',
