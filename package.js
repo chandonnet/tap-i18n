@@ -1,8 +1,8 @@
 Package.describe({
-	name: 'rocketchat:tap-i18n',
+	name: 'wolas:tap-i18n',
 	summary: 'A comprehensive internationalization solution for Meteor',
 	version: '1.9.0',
-	git: 'https://github.com/TAPevents/tap-i18n',
+	git: 'https://github.com/wolasss/tap-i18n',
 });
 
 const both = ['server', 'client'];
@@ -10,19 +10,19 @@ const server = 'server';
 const client = 'client';
 
 Package.onUse(function(api) {
-	api.versionsFrom('0.9.4');
+	api.versionsFrom('2.2');
 
-	api.use('coffeescript', both);
+	api.use('coffeescript@1.0.17', both);
 	api.use('underscore', both);
 	api.use('meteor', both);
 
-	api.use('raix:eventemitter@0.1.1', both);
+	api.use('raix:eventemitter@1.0.0', both);
 	api.use('meteorspark:util@0.2.0', both);
 
 	api.use('tracker', both);
 	api.use('session', client);
-	api.use('jquery', client);
-	api.use('templating', client);
+	api.use('jquery@3.0.0', client);
+	api.use('templating@1.4.0', client);
 
 	api.use('cfs:http-methods@0.0.27', server);
 
@@ -52,9 +52,9 @@ Package.onUse(function(api) {
 
 Package.registerBuildPlugin({
 	name: 'tap-i18n-compiler',
-	use: ['coffeescript', 'underscore', 'mdg:validation-error', 'aldeed:simple-schema@1.3.0', 'check@1.0.3', 'templating'],
+	use: ['coffeescript', 'underscore', 'mdg:validation-error@0.5.1', 'aldeed:simple-schema@1.5.4', 'check@1.3.1', 'templating@1.4.0'],
 	npmDependencies: {
-		yamljs: '0.2.4',
+		yamljs: '0.3.0',
 	},
 	sources: [
 		'lib/globals.js',
