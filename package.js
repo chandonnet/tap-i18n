@@ -1,7 +1,7 @@
 Package.describe({
 	name: 'fchandonnet:i18n',
 	summary: 'A comprehensive internationalization solution for Meteor',
-	version: '1.9.1',
+	version: '1.9.3',
 	git: 'https://github.com/chandonnet/tap-i18n',
 });
 
