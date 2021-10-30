@@ -21,7 +21,7 @@ Package.onUse(function(api) {
 
 	api.use('tracker', both);
 	api.use('session', client);
-	api.use('jquery@3.0.0', client);
+	api.use('jquery@1.11.11', client);
 	api.use('templating@1.4.0', client);
 
 	api.use('cfs:http-methods@0.0.27', server);
