@@ -22,7 +22,7 @@ html-tools@1.1.0
 htmljs@1.1.0
 id-map@1.1.0
 inter-process-messaging@0.1.1
-jquery@3.0.0
+jquery@1.11.11
 logging@1.2.0
 mdg:validation-error@0.5.1
 meteor@1.9.3
@@ -51,4 +51,4 @@ tracker@1.2.0
 underscore@1.0.10
 webapp@1.10.1
 webapp-hashing@1.1.0
-wolas:tap-i18n@1.9.0
+fchandonnet:i18n@1.9.3
