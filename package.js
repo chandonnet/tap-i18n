@@ -1,7 +1,7 @@
 Package.describe({
 	name: 'fchandonnet:i18n',
 	summary: 'A comprehensive internationalization solution for Meteor',
-	version: '1.9.3',
+	version: '1.9.5',
 	git: 'https://github.com/chandonnet/tap-i18n',
 });
 
@@ -12,19 +12,19 @@ const client = 'client';
 Package.onUse(function(api) {
 	api.versionsFrom('2.3');
 
-	api.use('coffeescript@1.0.17', both);
+	api.use('coffeescript', both);
 	api.use('underscore', both);
 	api.use('meteor', both);
 
-	api.use('raix:eventemitter@1.0.0', both);
-	api.use('meteorspark:util@0.2.0', both);
+	api.use('raix:eventemitter', both);
+	api.use('meteorspark:util', both);
 
 	api.use('tracker', both);
 	api.use('session', client);
 	api.use('jquery@1.11.11', client);
-	api.use('templating@1.4.0', client);
+	api.use('templating', client);
 
-	api.use('cfs:http-methods@0.0.27', server);
+	api.use('fchandonnet:http-methods', server);
 
 	// load TAPi18n
 	api.addFiles('lib/globals.js', both);
@@ -52,7 +52,7 @@ Package.onUse(function(api) {
 
 Package.registerBuildPlugin({
 	name: 'tap-i18n-compiler',
-	use: ['coffeescript', 'underscore', 'mdg:validation-error@0.5.1', 'aldeed:simple-schema@1.5.4', 'check@1.3.1', 'templating@1.4.0'],
+	use: ['coffeescript', 'underscore', 'mdg:validation-error', 'aldeed:simple-schema', 'check', 'templating'],
 	npmDependencies: {
 		yamljs: '0.3.0',
 	},
